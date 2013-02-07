@@ -6,9 +6,13 @@
     %title compass sinatra
     %meta{'http-equiv'=>"Content-Type", :content=>"text/html; charset=iso-8859-1"}/
     %meta{'http-equiv'=>"Content-Language", :content=>"en-us"}/
+
+    // Styles 
+    %link{:href=>"/vendor/bootstrap/css/bootstrap.min.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
     %link{:href=>"/stylesheets/screen.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+
   %body
-    .container.showgrid
+    .container
       .header
         %h1 header
       .body
@@ -16,3 +20,11 @@
         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       .footer
         %p footer
+
+    // Scripts placed at the end of body
+    %script{:type => "text/javascript", :src  => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+    %script{:type => "text/javascript", :src  => "/vendor/backbone/underscore-min.js"}
+    %script{:type => "text/javascript", :src  => "/vendor/backbone/backbone-min.js"}
+    %script{:type => "text/javascript", :src  => "/vendor/backbone/handlebars.js"}
+
+    %script{:type => "text/javascript", :src  => "/scripts/app.js"}
